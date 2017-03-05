@@ -16,6 +16,12 @@ body{
 
 .header-social{
 	display: inline-block;
+	margin: 0px;
+}
+
+.header-social li{
+	list-style: none;
+	display: inline-block;
 }
 
 .header-social-icon{
@@ -62,6 +68,17 @@ body{
 
 .header-button:hover{
 	color: rgb(150, 150, 150);
+}
+
+.header-logo{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10%;
+	transform: translateY(-10%);
+	vertical-align: middle;
 }
 /*end-header*/
 
