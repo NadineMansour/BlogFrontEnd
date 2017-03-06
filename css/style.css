@@ -1,11 +1,6 @@
-body{
-	background-color: black;
-}
-
 /*start-header*/
 
 .header-container{
-	background-color: rgb(254, 255,255);
 	height: 80px;
 	position: relative;
 }
