@@ -192,6 +192,83 @@
 }
 /*end-tag-component*/
 
+/*start-comment-component*/
+.comment-container{
+	border-bottom:solid 1px rgb(150, 150, 150);
+	display: inline-block;
+	position: relative;
+}
+
+.nn{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.comment-img{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+.comment-text{
+	text-align: left;
+	padding: 20px 0px 20px 0px;
+	margin-left: 100px;
+	float: right;
+	max-width: 600px;
+
+}
+
+.comment-name{
+	display: inline-block;
+	margin-right: 20px;
+	color: rgb(52, 52, 52);
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.comment-header-text{
+	display: inline-block;
+	font-size: 10px;
+	color: rgb(150,150,150);
+}
+
+.comment-content{
+	font-size: 14px;
+	color: rgb(130,130,130);
+}
+/*end-comment-component*/
+
+/*start-social-button-component*/
+.social-button{
+	border-radius: 10px;
+	color: white;
+	padding: 8px 12px 8px 12px;
+}
+
+.social-button:hover{
+	color: white;
+}
+
+.social-button-number{
+	margin-left: 15px;
+}
+
+.facebook-blue{
+	background-color: rgb(76, 106, 177);
+}
+
+.twitter-blue{
+	background-color: rgb(29, 170, 233);
+}
+
+.goole-red{
+	background-color: rgb(213, 64, 58);
+}
+/*end-social-button-component*/
+
 .clear{
 	clear: both;
 }
