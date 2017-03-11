@@ -199,12 +199,6 @@
 	position: relative;
 }
 
-.nn{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 .comment-img{
 	border-radius: 50%;
 	width: 60px;
@@ -264,7 +258,7 @@
 	background-color: rgb(29, 170, 233);
 }
 
-.goole-red{
+.google-red{
 	background-color: rgb(213, 64, 58);
 }
 /*end-social-button-component*/
@@ -337,6 +331,25 @@
 }
 
 .tags-container ul li{
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+.social-container ul{
+	list-style: none;
+	margin: 0px;
+}
+
+.social-container-label{
+	float: left;
+	margin-right: 40px;
+	color: rgb(52 ,52, 52);
+	font-size: 16px;
+}
+
+.social-container ul li{
+	list-style: none;
 	display: inline-block;
 	margin-right: 15px;
 	margin-bottom: 30px;
