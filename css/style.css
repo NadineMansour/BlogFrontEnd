@@ -233,6 +233,13 @@
 	font-size: 14px;
 	color: rgb(130,130,130);
 }
+
+.comment-img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 /*end-comment-component*/
 
 /*start-social-button-component*/
@@ -353,6 +360,22 @@
 	display: inline-block;
 	margin-right: 15px;
 	margin-bottom: 30px;
+}
+
+.comments-container{
+	background-color: rgb(242, 243, 244);
+	padding-top: 30px;
+}
+
+.comments-container ul{
+	list-style: none;
+	text-align: center;
+}
+
+.comments-container-label{
+	color: rgb(150, 150, 150);
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .clear{
