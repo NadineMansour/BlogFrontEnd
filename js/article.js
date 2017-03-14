@@ -39,5 +39,15 @@ function addComment(comment) {
 				'</li>';
 	$(".comments-container ul .add-comment-li").before(text);
 	$(".comments-container ul .add-comment-li input").val($(this).data('default'));
-}  
+} 
+
+var displaySearch = false;
+$('.header-search-icon').click(function() {
+    displaySearch = ! displaySearch;
+    if (displaySearch) {
+        $(".search-input").css("display", "inline-block");
+    } else{
+        $(".search-input").css("display", "none");
+    }
+});
 

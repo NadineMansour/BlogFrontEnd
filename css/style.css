@@ -35,14 +35,30 @@
 	color: rgb(254, 255,255);
 }
 
-.header-search-icon{
+.header-search{
 	float: right;
+}
+
+.header-search-icon{
 	color: rgb(52, 52, 52);
 	margin: 15px;
 }
 
 .header-search-icon:hover{
 	color: rgb(150, 150, 150);
+}
+
+.search-input{
+	border-radius: 30px;
+	padding: 2px 5px 2px 5px;
+	color: rgb(150, 150, 150);
+	border: 2px solid rgb(210, 210, 210);
+	font-style: italic;
+	display: none;
+}
+
+.search-input:focus {
+    outline-width: 0;
 }
 
 .header-buttons{
