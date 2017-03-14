@@ -1,7 +1,6 @@
 /*start-header*/
 
 .header-container{
-	height: 80px;
 	position: relative;
 }
 
@@ -12,6 +11,7 @@
 .header-social{
 	display: inline-block;
 	margin: 0px;
+	margin-right: 20%;
 }
 
 .header-social li{
@@ -37,10 +37,8 @@
 
 .header-search-icon{
 	float: right;
-	text-align: center;
-	vertical-align: middle;
 	color: rgb(52, 52, 52);
-	margin: 10px;
+	margin: 15px;
 }
 
 .header-search-icon:hover{
@@ -48,10 +46,7 @@
 }
 
 .header-buttons{
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 10px;
+	text-align: center;
 }
 
 .header-button{
@@ -68,13 +63,24 @@
 .header-logo{
 	width: 30px;
 	height: 30px;
-	position: absolute;
+	display: inline-block;
+	/*text-align: center;*/
+	/*margin-left: 200px;*/
+	/*position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	top: 10%;
-	transform: translateY(-10%);
+	transform: translateY(-10%);*/
 	vertical-align: middle;
 }
+
+@media screen and (max-width: 700px) { 
+
+	// If screen width is 700px or lower
+
+
+}
+
 /*end-header*/
 
 /*start-news-related-component*/
