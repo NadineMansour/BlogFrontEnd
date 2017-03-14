@@ -211,8 +211,7 @@
 	padding: 20px 0px 20px 20px;
 	margin-left: 100px;
 	float: right;
-	max-width: 600px;
-	min-width: 200px;
+	width: 600px;
 }
 
 .comment-name{
@@ -394,8 +393,7 @@
 	padding: 20px 0px 20px 20px;
 	margin-left: 100px;
 	float: right;
-	max-width: 600px;
-	min-width: 200px;
+	width: 600px;
 }
 
 .clear{
