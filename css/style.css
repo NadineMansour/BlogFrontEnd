@@ -1,7 +1,6 @@
 /*start-header*/
 
 .header-container{
-	height: 80px;
 	position: relative;
 }
 
@@ -12,6 +11,7 @@
 .header-social{
 	display: inline-block;
 	margin: 0px;
+	margin-right: 20%;
 }
 
 .header-social li{
@@ -35,23 +35,34 @@
 	color: rgb(254, 255,255);
 }
 
-.header-search-icon{
+.header-search{
 	float: right;
-	text-align: center;
-	vertical-align: middle;
+}
+
+.header-search-icon{
 	color: rgb(52, 52, 52);
-	margin: 10px;
+	margin: 15px;
 }
 
 .header-search-icon:hover{
 	color: rgb(150, 150, 150);
 }
 
+.search-input{
+	border-radius: 30px;
+	padding: 2px 5px 2px 5px;
+	color: rgb(150, 150, 150);
+	border: 2px solid rgb(210, 210, 210);
+	font-style: italic;
+	display: none;
+}
+
+.search-input:focus {
+    outline-width: 0;
+}
+
 .header-buttons{
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 10px;
+	text-align: center;
 }
 
 .header-button{
@@ -68,18 +79,14 @@
 .header-logo{
 	width: 30px;
 	height: 30px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 10%;
-	transform: translateY(-10%);
+	display: inline-block;
 	vertical-align: middle;
 }
 /*end-header*/
 
 /*start-news-related-component*/
 .news_related_component{
-	width: 200px;
+	max-width: 200px;
 	text-align: left;
 	border-bottom:solid 1px rgb(150, 150, 150);
 	padding: 5px;
@@ -131,12 +138,12 @@
 
 .footer-left{
 	display: inline-block;
+	margin-right: 40px;
 }
 
 .footer-text{
 	display: inline-block;
 	text-align: left;
-	margin-left: 40px;
 	max-width: 500px;
 	color: rgb(150,150,150);
 }
@@ -196,13 +203,8 @@
 .comment-container{
 	border-bottom:solid 1px rgb(150, 150, 150);
 	display: inline-block;
+	width: 80%;
 	position: relative;
-}
-
-.nn{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .comment-img{
@@ -214,11 +216,8 @@
 
 .comment-text{
 	text-align: left;
-	padding: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 20px;
 	margin-left: 100px;
-	float: right;
-	max-width: 600px;
-
 }
 
 .comment-name{
@@ -239,6 +238,13 @@
 	font-size: 14px;
 	color: rgb(130,130,130);
 }
+
+.comment-img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 /*end-comment-component*/
 
 /*start-social-button-component*/
@@ -264,10 +270,136 @@
 	background-color: rgb(29, 170, 233);
 }
 
-.goole-red{
+.google-red{
 	background-color: rgb(213, 64, 58);
 }
 /*end-social-button-component*/
+
+/*start-articles-layout-banner*/
+.article-banner{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	height: 100vh;
+	min-height: 500px;
+	position: relative;
+}
+
+.article-banner-header{
+	background-color: white;
+}
+
+.article-banner-text{
+	position: absolute;
+	display: inline-block;
+	padding: 0px;
+	width: 45%;
+	top: 30%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.article-banner-tag{
+	color: yellow;
+}
+
+.article-banner-content{
+	color: white;
+}
+/*end-articles-layout-banner*/
+
+.article-middle{
+	margin-top: 40px;
+}
+
+.related-articles-title{
+	color: rgb(52 ,52, 52);
+	font-weight: bold;
+	padding: 0px 0px 30px 0px;
+	font-size: 12px;
+}
+
+.article-middle-subtitle{
+	color: rgb(52 ,52, 52);
+	font-weight: bold;
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.article-layout-img{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.related-articles{
+	/*float: right;*/
+	/*text-align: center;*/
+}
+
+.tags-container ul{
+	list-style: none;
+	margin: 0px;
+}
+
+.tags-container ul li{
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+.social-container ul{
+	list-style: none;
+	margin: 0px;
+}
+
+.social-container-label{
+	float: left;
+	margin-right: 40px;
+	color: rgb(52 ,52, 52);
+	font-size: 16px;
+}
+
+.social-container ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+.comments-container{
+	background-color: rgb(242, 243, 244);
+	padding-top: 30px;
+}
+
+.comments-container ul{
+	list-style: none;
+	text-align: center;
+}
+
+.comments-container-label{
+	color: rgb(150, 150, 150);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.add-comment-container{
+	border-bottom:solid 1px rgb(150, 150, 150);
+	display: inline-block;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 80%;
+}
+
+.new-comment{
+	border-width: 0px;
+	background-color: rgb(242, 243, 244);
+	color: rgb(150, 150, 150);
+	text-align: left;
+	padding: 20px 0px 20px 20px;
+	margin-left: 100px;
+	width: 80%;
+}
 
 .clear{
 	clear: both;
