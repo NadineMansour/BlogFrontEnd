@@ -131,12 +131,12 @@
 
 .footer-left{
 	display: inline-block;
+	margin-right: 40px;
 }
 
 .footer-text{
 	display: inline-block;
 	text-align: left;
-	margin-left: 40px;
 	max-width: 500px;
 	color: rgb(150,150,150);
 }
