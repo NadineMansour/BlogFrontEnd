@@ -208,7 +208,7 @@
 
 .comment-text{
 	text-align: left;
-	padding: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 20px;
 	margin-left: 100px;
 	float: right;
 	max-width: 600px;
@@ -376,6 +376,25 @@
 	color: rgb(150, 150, 150);
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.add-comment-container{
+	border-bottom:solid 1px rgb(150, 150, 150);
+	display: inline-block;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.new-comment{
+	border-width: 0px;
+	background-color: rgb(242, 243, 244);
+	color: rgb(150, 150, 150);
+	text-align: left;
+	padding: 20px 0px 20px 20px;
+	margin-left: 100px;
+	float: right;
+	width: 600px;
 }
 
 .clear{
