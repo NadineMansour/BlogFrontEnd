@@ -423,6 +423,7 @@ body{
 
 .dropdown-component{
 	width: 150px;
+	position: relative;
 }
 
 .dropdown-list{
@@ -431,6 +432,8 @@ body{
 	margin: 0px;
 	width: 100%;
 	display: none;
+	position: absolute;
+	top: 100%;
 }
 
 .dropdown-list.open{
