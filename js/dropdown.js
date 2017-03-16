@@ -12,7 +12,7 @@ function set_selected(selected_item){
 }
 
 $('.dropdown-button').click(function(e) {
-	$('dropdown-list')
+	$('.dropdown-list').toggleClass('open');
 });
 
 });

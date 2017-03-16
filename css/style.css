@@ -405,16 +405,38 @@
 
 /*start-dropdown-component*/
 
-.dropdown-component{
+@keyframes fadeIn{
+	0%{
+		display: block;
+		opacity: 0;
+		transform: scale(.8) translateY(-15px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+body{
 	background-color: rgb(243, 247, 248);
+}
+
+.dropdown-component{
 	width: 150px;
 }
 
-.dropdown-component ul{
+.dropdown-list{
 	list-style: none;
 	background-color: white;
 	margin: 0px;
 	width: 100%;
+	display: none;
+}
+
+.dropdown-list.open{
+	display: block;
+	opacity: 1;
+	animation: fadeIn .4s;
 }
 
 .dropdown-item{
