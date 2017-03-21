@@ -543,6 +543,45 @@ body{
 }
 /*end-dropdown-component*/
 
+/*start-post-box-container*/
+.post_box_container{
+	width: 200px;
+	box-shadow: 3px 3px 1px rgb(220,220,220);
+}
+
+.post_box_img{
+	width: 200px;
+	height: 160px;
+}
+
+.post_box_text{
+	padding: 20px 10px 5px 10px;
+	font-size: 13px;
+}
+
+.post_box_text_header{
+	font-size: 12px;
+}
+
+.post_box_text_header_tag{
+	color: orange;
+	display: inline-block;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.post_box_text_header_data{
+	margin-right: 10px;
+	color: rgb(150, 150, 150);
+	display: inline-block;
+}
+
+.post_box_text_title{
+	font-weight: bold;
+}
+/*end-post-box-container*/
+
+
 .clear{
 	clear: both;
 }
