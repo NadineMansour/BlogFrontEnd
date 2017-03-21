@@ -581,6 +581,17 @@ body{
 }
 /*end-post-box-container*/
 
+/*start-blog-layout-banner*/
+.blog-banner{
+	height: 100vh;
+	min-height: 500px;
+	position: relative;
+}
+
+.blog-banner-header{
+	background-color: white;
+}
+/*end-blog-layout-banner*/
 
 .clear{
 	clear: both;
