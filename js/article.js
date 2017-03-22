@@ -1,3 +1,4 @@
+//input field functionality
 var input = $('input');
 input.each(function(){
     $(this).data('default', $(this).val());
@@ -18,7 +19,6 @@ input.each(function(){
     return false;    
   }
 });  
-
 
 //Method to ad a new comment to the list
 function addComment(comment) {
@@ -41,6 +41,7 @@ function addComment(comment) {
 	$(".comments-container ul .add-comment-li input").val($(this).data('default'));
 } 
 
+//The search button and search field functionality
 var displaySearch = false;
 $('.header-search-icon').click(function() {
     displaySearch = ! displaySearch;
