@@ -697,6 +697,69 @@ body{
 }
 /*end-article-tags-container*/
 
+/*start-home-layout-banner*/
+.home-banner{
+	height: 100vh;
+	background-image: url(../images/home_banner.jpg);
+	background-size: cover;
+	min-height: 400px;
+}
+
+.home-banner-color{
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(177, 135, 245, 0.9), rgba(110, 120, 220, 0.9), rgba(128, 165, 246, 0.9));
+}
+
+.home-banner-text{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+.home-banner-text h1{
+	font-weight: bold;
+}
+
+.home-banner-text h6{
+	font-weight: bold;
+	color: white;
+}
+
+.home-banner-btns{
+	margin-top: 20px;
+}
+
+.btn{
+	border-radius: 5px;
+	padding: 10px 15px 10px 15px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.btn_white{
+	background-color: white;
+	color: black;
+}
+
+.btn_red{
+	background-color: red;
+	color: white;
+}
+
+.btn:hover{
+	background-color: black;
+	color: white;
+}
+
+@media screen and (max-height: 300px) {
+	.home-banner-text{
+		top: 200px;
+	}
+}
+/*end-home-layout-banner*/
+
 .clear{
 	clear: both;
 }
