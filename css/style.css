@@ -148,6 +148,49 @@
 }
 /*end-news-related-component*/
 
+/*start-article_component*/
+.article_component {
+	width: 200px;
+	text-align: left;
+	box-shadow: 0px 0px 20px #AAAAAA;
+	background-color: #ffffff;
+	margin: 20px 5px;
+}
+
+.article_component_img {
+	margin-bottom: 15px;
+}
+
+.article_component_info {
+	color: rgb(150, 150, 150);
+	font-size: 12px;
+	padding: 5px;
+}
+
+.article_component_info * {
+	display: inline-block;
+}
+
+.article_component_type {
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+[data-article-type="news"] {
+	color: blue;
+}
+
+[data-article-type="tech"] {
+	color: orange;
+}
+
+.article_component_text{
+	color: rgb(52, 52, 52);
+	font-size: 14px;
+	padding: 5px;
+}
+/*end-article_component*/
+
 /*start-footer-component*/
 .footer-container{
 	color: white;
@@ -581,6 +624,78 @@ body{
 }
 /*end-post-box-container*/
 
+/*start-blog-layout-banner*/
+.blog-banner{
+	height: 100vh;
+	min-height: 500px;
+	position: relative;
+}
+
+.blog-banner-header{
+	background-color: #ffffff;
+}
+/*end-blog-layout-banner*/
+
+/*start-blog-layout*/
+.articles-container {
+	background-color: #ffffff;
+	padding: 0px 10px 20px 10px;
+}
+
+.articles-list {
+	width: 100%;
+	text-align: center;
+	background-color: #ffffff;
+	padding: 25px 20px;
+}
+
+.articles-list * {
+	display: inline-block;
+}
+
+.articles-load-more-button {
+	text-align: center;
+}
+
+.articles-load-more-button a {
+	color: #ffffff;
+	text-align: center;
+	background-color: #007fff;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+
+.article-filtering {
+	padding-left: 0px;
+	padding-right: 10px;
+	background-color: rgb(242, 244, 246);
+}
+/*end-blog-layout*/
+
+/*start-article-tags-container*/
+.article-tags-container {
+	background-color: #ffffff;
+	margin: 0px 10px;
+}
+
+.tags-label {
+	padding-top: 20px;
+	text-align: center;
+	text-decoration: underline;
+	color: rgb(36, 158, 191);
+}
+
+.tags-list ul {
+	list-style: none;
+	padding: 20px 10px;
+	margin: 0px;
+}
+
+.tags-list ul li {
+	display: inline-block;
+	margin: 5px 0px;
+}
+/*end-article-tags-container*/
 
 .clear{
 	clear: both;
