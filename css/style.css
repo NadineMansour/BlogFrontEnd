@@ -594,8 +594,9 @@ body{
 /*end-blog-layout-banner*/
 
 /*start-blog-layout*/
+/*start-tags-container*/
 .tags-container {
-	magrin: 0 auto;
+	margin: 0 auto;
 	background-color: #ffffff;
 }
 
@@ -606,18 +607,15 @@ body{
 	color: rgb(36, 158, 191);
 }
 
-.tags-list {
-	margin: 10px 20px;
-}
-
 .tags-list ul {
 	list-style: none;
-	margin: 0px;
+	padding: 20px 10px;
 }
 
 .tags-list ul li {
-	margin: 0;
+	margin: 5px 0px;
 }
+/*end-tags-container*/
 /*end-blog-layout*/
 
 .clear{
