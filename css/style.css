@@ -148,6 +148,47 @@
 }
 /*end-news-related-component*/
 
+/*start-article_component*/
+.article_component {
+	max-width: 200px;
+	text-align: left;
+	box-shadow: 0px 0px 20px #AAAAAA;
+	background-color: #ffffff;
+}
+
+.article_component_img {
+	margin-bottom: 15px;
+}
+
+.article_component_info {
+	color: rgb(150, 150, 150);
+	font-size: 12px;
+}
+
+.article_component_info * {
+	display: inline-block;
+}
+
+.article_component_type {
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+[data-article-type="news"] {
+	color: blue;
+}
+
+[data-article-type="tech"] {
+	color: orange;
+}
+
+.article_component_text{
+	color: rgb(52, 52, 52);
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+/*end-article_component*/
+
 /*start-footer-component*/
 .footer-container{
 	color: white;
