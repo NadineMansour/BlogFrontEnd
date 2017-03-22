@@ -70,6 +70,10 @@
 	margin: 10px;
 }
 
+.header-button-white{
+	color: white;
+}
+
 .header-button:hover{
 	color: rgb(150, 150, 150);
 }
@@ -582,10 +586,16 @@ body{
 /*end-post-box-container*/
 
 /*start-home-layout-banner*/
-.home_banner{
+.home-banner{
 	height: 100vh;
-	background-color: grey;
-	min-height: 500px;
+	background-image: url(../images/home_banner.jpg);
+	background-size: cover;
+	min-height: 400px;
+}
+
+.home-banner-color{
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(177, 135, 245, 0.9), rgba(110, 120, 220, 0.9), rgba(128, 165, 246, 0.9));
 }
 
 .home-banner-text{
@@ -633,11 +643,7 @@ body{
 
 @media screen and (max-height: 300px) {
 	.home-banner-text{
-		position: absolute;
-		top: 90%;
-		transform: translateY(-50%);
-		width: 100%;
-		text-align: center;
+		top: 200px;
 	}
 }
 /*end-home-layout-banner*/
