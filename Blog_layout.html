@@ -44,8 +44,35 @@
 
 	<div class="row article-main">
 		<div class="article-filtering medium-3 columns">
-			<div class="row">
-				<!-- Dropdown lists go here -->
+			<div class="row droplists-container">
+				<div class="dropdown-component">
+					<h6 class="dropdown-title">Category</h6>
+					<button class="dropdown-button">
+						<span class="dropdown-button-selected">Selected</span> 
+						<i class="fa fa-angle-down dropdown-button-icon" aria-hidden="true"></i>
+						<div class="clear"></div>
+					</button>
+					<ul class="dropdown-list">
+						<li class="dropdown-item">All</li>
+						<li class="dropdown-item">News</li>
+						<li class="dropdown-item">Sports</li>
+						<li class="dropdown-item">Politics</li>
+						<li class="dropdown-item">Tech</li>
+					</ul>
+				</div>
+				<div class="dropdown-component">
+					<h6 class="dropdown-title">Sort By</h6>
+					<button class="dropdown-button">
+						<span class="dropdown-button-selected">Selected</span> 
+						<i class="fa fa-angle-down dropdown-button-icon" aria-hidden="true"></i>
+						<div class="clear"></div>
+					</button>
+					<ul class="dropdown-list">
+						<li class="dropdown-item">Latest</li>
+						<li class="dropdown-item">Hottest</li>
+						<li class="dropdown-item">Top Rated</li>
+					</ul>
+				</div>
 			</div>
 			<div class="row">
 				<!-- Tags list -->
@@ -252,5 +279,6 @@
 
 	<script src="js/jquery.js"></script>
 	<script src="js/article.js"></script>
+	<script src="js/dropdown.js"></script>
 </body>
 </html>
