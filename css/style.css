@@ -616,8 +616,7 @@ body{
 }
 
 .tags-list ul li {
-	display: inline-block;
-	margin-bottom: 0px;
+	margin: 0;
 }
 /*end-blog-layout*/
 
