@@ -527,8 +527,10 @@ body{
 }
 
 .dropdown-component{
-	width: 150px;
+	width: 100px;
 	position: relative;
+	display: inline-block;
+	margin-right: 10px;
 }
 
 .dropdown-list{
@@ -670,12 +672,16 @@ body{
 	padding-right: 10px;
 	background-color: rgb(242, 244, 246);
 }
+
+.droplists-container {
+	padding-bottom: 20px;
+}
 /*end-blog-layout*/
 
 /*start-article-tags-container*/
 .article-tags-container {
 	background-color: #ffffff;
-	margin: 0px 10px;
+	margin: 0px 20px 0px 0px;
 }
 
 .tags-label {
