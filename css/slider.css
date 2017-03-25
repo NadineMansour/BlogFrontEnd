@@ -22,10 +22,11 @@
 
 ._slider_arrow {
 	background-size: cover;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
-	z-index: 5;
+	z-index: 200;
+	bottom: 20px;
 }
 
 ._slider_left{

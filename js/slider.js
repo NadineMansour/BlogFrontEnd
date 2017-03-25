@@ -9,7 +9,7 @@
 		showSlides  data-show-slides  1  // num of slides to show
 		navClass    data-nav-class    "" // class to add to slider nav
 		arrowClass  data-arrow-class  "" // class to add to each arrow
-		dotClass    data-dots-class   "" // class to add to dots CONTAINER
+		dotClass    data-dots-class   "" // class to add to dots' CONTAINER
 	*/
 
 	var Slider = (function() {
@@ -27,21 +27,21 @@
 			}
 
 			Object.keys(this.settings).forEach(function(key) {
-				var override = element.data(key);
-				this.settings[key] = override || this.settings[key];
+				var override       = element.data(key);
+				this.settings[key] = (typeof override !== "undefined") ? override : this.settings[key];
 			}.bind(this))
 
 			this.settings.showSlides = element.data('show-slides') || 1;
-			this.settings.navClass = element.data('nav-class') || "";
+			this.settings.navClass   = element.data('nav-class') || "";
 			this.settings.arrowClass = element.data('arrow-class') || "";
-			this.settings.dotsClass = element.data('dots-class') || "";
+			this.settings.dotsClass  = element.data('dots-class') || "";
 
 			this.$element = element;
 
-			this.currentIndex = 0;
-			this.totalSlides = this.$element.find('.slide').length;
-			this.lastIndex = Math.ceil(this.totalSlides / this.settings.showSlides) - 1;
+			this.currentIndex    = 0;
+			this.totalSlides     = this.$element.find('.slide').length;
 			this.irregularSlides = (this.totalSlides % this.settings.showSlides != 0);
+			this.lastIndex       = Math.ceil(this.totalSlides / this.settings.showSlides) - 1;
 			
 			this.goTo = this.goTo.bind(this);
 			this.prepare();
@@ -59,11 +59,17 @@
 
 
 		var containerWidth = Math.ceil(this.totalSlides/this.settings.showSlides)
-		this.$element.find('.slides_container').css('width', (100* containerWidth) +"%");
-		this.$element.find('.slide').css('width', ((100/this.settings.showSlides)/containerWidth) + "%");		
+		this.$element
+		    .find('.slides_container')
+		    .css('width', (100* containerWidth) +"%");
+
+		this.$element
+		    .find('.slide')
+		    .css('width', ((100/this.settings.showSlides)/containerWidth) + "%");		
 
 		if(this.settings.dots || this.settings.arrows) {
-			this.$element.append('<div class="_slider_nav '+this.settings.navClass+'"></div>');
+			this.$element
+			    .append('<div class="_slider_nav '+this.settings.navClass+'"></div>');
 		}
 
 		this._addArrowsIfNeeded();
@@ -82,10 +88,12 @@
 			}
 
 			this.$element.find('._slider_nav')
-			.append(arrowTemplate('left'))
-			.append(arrowTemplate('right'));
+			             .append(arrowTemplate('left'))
+			             .append(arrowTemplate('right'));
 
-			this.$element.find('._slider_arrow').on('click', this.goTo);
+			this.$element
+			    .find('._slider_arrow')
+			    .on('click', this.goTo);
 		}
 	}
 
@@ -95,9 +103,9 @@
 
 			// add dots list element
 			var dots = this.$element
-							.find('._slider_nav')
-							.append('<ul class="_slider_dots" '+additionalClass+'>')
-							.find('._slider_dots');
+			               .find('._slider_nav')
+			               .append('<ul class="_slider_dots" '+additionalClass+'>')
+			               .find('._slider_dots');
 
 			var slidesCount = Math.ceil(this.totalSlides / this.settings.showSlides);
 
@@ -106,11 +114,11 @@
 				dots.append('<li data-slide-index=' + i + '>');
 			}
 
-			// add active class to first dot
+			// add click handler and add active class to first dot
 			dots.find('li')
-					.on('click', this.goTo)
-					.eq(0)
-					.addClass('active');
+			    .on('click', this.goTo)
+			    .eq(0)
+			    .addClass('active');
 		}
 	}
 
@@ -122,18 +130,18 @@
 			this.stopAutoplayTimer();
 		// remove active class from old index dot
 		this.$element
-			.find('._slider_dots li')
-			.eq(this.currentIndex)
-			.removeClass('active');
+		    .find('._slider_dots li')
+		    .eq(this.currentIndex)
+		    .removeClass('active');
 
 		// update currentIndex to correct index
 		this.currentIndex = this.indexFromEvent(e);
 
 		// add active class to dot
 		this.$element
-			.find('._slider_dots li')
-			.eq(this.currentIndex)
-			.addClass('active');
+		    .find('._slider_dots li')
+		    .eq(this.currentIndex)
+		    .addClass('active');
 
 
 		var slideModifier = this.currentIndex;
@@ -143,8 +151,8 @@
 		}	
 		// show the correct slide
 		this.$element
-			.find('.slides_container')
-			.css('right', slideModifier * 100 + "%");
+		    .find('.slides_container')
+		    .css('right', slideModifier * 100 + "%");
 		
 		if(this.settings.autoplay)
 			this.startAutoplayTimer();
@@ -153,9 +161,9 @@
 	Slider.prototype.indexFromEvent = function(e) {
 		var direction = 'right'; // e maybe undefined if event triggered by autoplay
 		if(e !== undefined) {
-			var target = $(e.currentTarget);
+			var target    = $(e.currentTarget);
 			var nextIndex = target.data('slide-index'); // if the element clicked was a dot
-			direction = target.data('slide-direction'); // if the element clicked was an arrow
+			direction     = target.data('slide-direction'); // if the element clicked was an arrow
 		}
 
 		if(direction == 'left') {
