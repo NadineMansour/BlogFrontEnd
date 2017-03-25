@@ -2,9 +2,9 @@
 	/*
 		Options     data-modifier     default
 		
-		dots  		data-dots		  true
-		arrows 		data-arrows		  true
-		autoplay 	data-autoplay	  false
+		dots        data-dots         true
+		arrows      data-arrows       true
+		autoplay    data-autoplay     false
 		duration    data-duration     2000  only relevant if autoplay set to true
 		showSlides  data-show-slides  1  // num of slides to show
 		navClass    data-nav-class    "" // class to add to slider nav
