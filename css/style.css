@@ -399,7 +399,7 @@
 .article-banner{
 	background-image: url(../images/banner.jpg);
 	background-size: cover;
-	height: 100vh;
+	height: 90vh;
 	min-height: 500px;
 	position: relative;
 }
@@ -647,7 +647,7 @@ body{
 
 /*start-blog-layout-banner*/
 .blog-banner{
-	height: 100vh;
+	height: 90vh;
 	min-height: 700px;
 	position: relative;
 
@@ -730,7 +730,7 @@ body{
 }
 
 .home-banner{
-	height: 100vh;
+	height: 90vh;
 	background-image: url(../images/home_banner.jpg);
 	background-size: cover;
 	min-height: 400px;
