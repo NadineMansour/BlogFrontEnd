@@ -25,7 +25,7 @@
 				dots: true,
 				arrows: true,
 				autoplay: false,
-				duration: 2000
+				duration: 3000
 			}
 
 			Object.keys(this.settings).forEach(function(key) {

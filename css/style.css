@@ -778,12 +778,14 @@ body{
 
 .author_card_container {
 	position: relative;
-	height:300px;
+	height:325px;
 }
 
 .author_slider {
-	height: 350px;
-	width: 70%;
+	height: 400px;
+	/*width: 70%;*/
+	padding-left: 0px;
+	padding-right: 0px;
 	margin: 0 auto;
 }
 
@@ -861,18 +863,16 @@ body{
 /* Home Slider */
 .home_slider {
 	height: 400px;
-	width: 55%;
 }
 
 .home_slides_container {
 	height: 380px;
 }
 
-
 .home_slide {
-	padding: 100px;
+	padding: 90px;
 	background-size: cover;
-	background-repeat:   no-repeat;
+	background-repeat: no-repeat;
     background-position: center center;
   	padding-top: 50px;
   	height: 100%;
@@ -889,13 +889,13 @@ body{
 }
 .home_slider_arrow {
 	border-color: white;
-	margin-right: 45px;
-	margin-left: 45px;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .home_slider_arrow {
 	width: 12px;
-	hegiht
+	height: 12px;
 }
 
 .home_slider_arrow:after {
@@ -924,6 +924,8 @@ body{
 
 .home_slide_title {
 	color: white;
+	margin-bottom: 30px;
+	margin-top: 10px;
 }
 
 .home_slide_category {
