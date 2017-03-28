@@ -635,7 +635,7 @@ body{
 	height: 100vh;
 	min-height: 700px;
 	position: relative;
-	overflow: hidden;
+
 }
 
 .blog-banner-header{
@@ -946,9 +946,10 @@ body{
 
 /* Blog slider */
 .blog_slider {
-	height: 700px;
+	height: 600px;
 	min-height: 600px;
 	width: 100%;
+	position: relative;
 }
 
 .blog_slides_container {
@@ -986,10 +987,9 @@ body{
 }
 
 .blog_slider_nav {
-	bottom: 48px;
-    margin-left: 30px;
-    margin-right: 30px;
+	bottom: 150px;
     height: 48px;
+	margin: 0px 30px;
     background: transparent;
 }
 
