@@ -3,52 +3,69 @@
 <head>
 	<title>Author Card Component</title>
 	<link rel="stylesheet" href="../css/foundation.min.css">
+	<link rel="stylesheet" href="../css/slider.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 	<!-- Wolverine -->
-	<div class="author_card" id="profile">
-		<p class="card_label" data-type="author">AUTHOR</p>
-		<img class="author_display_image" src="../images/authors/wolverine.jpg">
-		<p class="author_name">James Howlett</p>
+	<div class="slider author_slider" data-slider data-arrows=false data-show-slides=3 data-show-slides-med=2 data-show-slides-sml=1 data-autoplay=true data-nav-class="author_slider_nav" data-dots-class="author_slider_dots">
+		<div class="slides_container">
+			<div class="slide author_card_container">
+				<div class="author_card" id="profile">
+					<p class="card_label" data-type="author">AUTHOR</p>
+					<img class="author_display_image" src="../images/authors/wolverine.jpg">
+					<p class="author_name">James Howlett</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+				<div class="author_card" id="quote">
+					<p class="card_label" data-type="quote">JAMES HOWLETT</p>
+					<p class="author_quote">The pain lets you know you're still alive.</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+				<div class="author_card" id="profile">
+					<p class="card_label" data-type="author">AUTHOR</p>
+					<img class="author_display_image" src="../images/authors/ironman.jpg">
+					<p class="author_name">Tony Stark</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+				<div class="author_card" id="quote">
+					<p class="card_label" data-type="quote">TONY STARK</p>
+					<p class="author_quote">Heroes are made by the paths they choose, not the powers they are graced with.</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+				<div class="author_card" id="profile">
+					<p class="card_label" data-type="author">AUTHOR</p>
+					<img class="author_display_image" src="../images/authors/cyclops.jpg">
+					<p class="author_name">Scott Summers</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+				<div class="author_card" id="quote">
+					<p class="card_label" data-type="quote">SCOTT SUMMERS</p>
+					<p class="author_quote">You can't kill an idea. It always comes back. Resurrected. Or reborn into a different form.</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+				<div class="author_card" id="profile">
+					<p class="card_label" data-type="author">AUTHOR</p>
+					<img class="author_display_image" src="../images/authors/batman.jpg">
+					<p class="author_name">Bruce Wayne</p>
+				</div>
+			</div>
+			<div class="slide author_card_container">
+			<div class="author_card" id="quote">
+					<p class="card_label" data-type="quote">BRUCE WAYNE</p>
+					<p class="author_quote">Sometime it's only madness that makes us what we are.</p>
+				</div> 
+			</div>
+		</div>
 	</div>
-	<div class="author_card" id="quote">
-		<p class="card_label" data-type="quote">JAMES HOWLETT</p>
-		<p class="author_quote">The pain lets you know you're still alive.</p>
-	</div>
-
-	<!-- Ironman -->
-	<div class="author_card" id="profile">
-		<p class="card_label" data-type="author">AUTHOR</p>
-		<img class="author_display_image" src="../images/authors/ironman.jpg">
-		<p class="author_name">Tony Stark</p>
-	</div>
-	<div class="author_card" id="quote">
-		<p class="card_label" data-type="quote">TONY STARK</p>
-		<p class="author_quote">Heroes are made by the paths they choose, not the powers they are graced with.</p>
-	</div>
-
-	<!-- Cyclops -->
-	<div class="author_card" id="profile">
-		<p class="card_label" data-type="author">AUTHOR</p>
-		<img class="author_display_image" src="../images/authors/cyclops.jpg">
-		<p class="author_name">Scott Summers</p>
-	</div>
-	<div class="author_card" id="quote">
-		<p class="card_label" data-type="quote">SCOTT SUMMERS</p>
-		<p class="author_quote">You can't kill an idea. It always comes back. Resurrected. Or reborn into a different form.</p>
-	</div>
-
-	<!-- Batman -->
-	<div class="author_card" id="profile">
-		<p class="card_label" data-type="author">AUTHOR</p>
-		<img class="author_display_image" src="../images/authors/batman.jpg">
-		<p class="author_name">Bruce Wayne</p>
-	</div>
-	<div class="author_card" id="quote">
-		<p class="card_label" data-type="quote">BRUCE WAYNE</p>
-		<p class="author_quote">Sometime it's only madness that makes us what we are.</p>
-	</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/slider.js"></script>
 </body>
 </html>
