@@ -766,6 +766,63 @@ body{
 }
 /*end-home-layout-banner*/
 
+/* Author card */
+.author_card {
+	width: 175px;
+	height: 225px;
+	position: relative;
+	display: inline-block;
+	margin: 0px 25px;
+	overflow: hidden;
+}
+#profile {
+	background: rgb(255, 255, 255);
+}
+#quote {
+	background: rgb(155, 86, 255);
+	background: linear-gradient(to right, rgb(91, 126, 255) , rgb(155, 86, 255));
+}
+.card_label {
+	font-size: 10px;
+	padding-top: 15px;
+	text-decoration: underline;
+	text-align: center;
+}
+.card_label[data-type="author"] {
+	color: rgb(145, 121, 249);
+}
+.card_label[data-type="quote"] {
+	color: rgb(255, 255, 255);
+}
+.author_display_image {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.author_name {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	padding-bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+.author_quote {
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0px 3px;
+}
+/* Author card over */
+
 .clear{
 	clear: both;
 }
